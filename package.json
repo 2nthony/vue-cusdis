@@ -1,0 +1,25 @@
+{
+  "name": "vue-cusdis",
+  "version": "1.0.0",
+  "files": [
+    "dist/*.js"
+  ],
+  "main": "dist/VueCusdis.es.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf dist && npm run build:3 && npm run build:2",
+    "serve": "vite preview",
+    "build:3": "vite build --config vite.library.config.js --emptyOutDir false",
+    "build:2": "vite build --config vite.library.v2.config.js --emptyOutDir false",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "cusdis": "^1.1.0",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.5",
+    "vite": "^2.2.3"
+  }
+}
