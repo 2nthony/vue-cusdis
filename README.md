@@ -23,10 +23,10 @@ npm i @evillt/vue-cusdis
   // For Vue 3
   import VueCusdis from '@evillt/vue-cusdis'
   // For Vue 2
-  import VueCusdis from '@evillt/vue-cusdis/dist/V2.es
+  import VueCusdis from '@evillt/vue-cusdis/dist/V2.es'
 
   export default {
-    components: { VueCusdis }
+    components: { VueCusdis },
   }
 </script>
 ```
