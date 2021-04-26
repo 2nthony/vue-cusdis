@@ -1,5 +1,5 @@
 {
-  "name": "vue-cusdis",
+  "name": "@evillt/vue-cusdis",
   "version": "1.0.0",
   "files": [
     "dist/*.js"
