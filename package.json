@@ -7,7 +7,8 @@
   "files": [
     "dist/*.js"
   ],
-  "main": "dist/VueCusdis.es.js",
+  "main": "dist/VueCusdis.umd.js",
+  "module": "dist/VueCusdis.es.js",
   "scripts": {
     "dev": "vite",
     "build": "rm -rf dist && npm run build:3 && npm run build:2",
