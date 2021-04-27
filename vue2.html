@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>vue2 cusdis</title>
+  </head>
+  <body>
+    <div id="app">
+      <vue-cusdis
+        :attrs="{
+          appId: '93dffca4-d9a3-49e0-b728-00add49b7bce',
+          pageId: 'test',
+        }"
+      ></vue-cusdis>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script type="module">
+      import VueCusdis from './src/VueCusdisV2.js'
+      new Vue({
+        el: '#app',
+        components: {
+          VueCusdis,
+        },
+      })
+    </script>
+  </body>
+</html>

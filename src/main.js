@@ -1,14 +1,27 @@
 import { createApp, h } from 'vue'
-import Cusdis from './VueCusdis'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import App from './App.vue'
+import Home from './views/index.vue'
+import Foo from './views/foo.vue'
 
-createApp({
-  render: () => {
-    return h(Cusdis, {
-      attrs: {
-        host: 'https://cusdis.com',
-        appId: '89c97d5a-a7b8-4263-84d0-345a637e9132',
-        pageId: 'test',
-      },
-    })
-  },
-}).mount('#app')
+const app = createApp({
+  render: () => h(App),
+})
+
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes: [
+    {
+      path: '/',
+      component: Home,
+    },
+    {
+      path: '/foo',
+      component: Foo,
+    },
+  ],
+})
+
+app.use(router)
+
+app.mount('#app')
