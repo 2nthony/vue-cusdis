@@ -10,7 +10,7 @@ export const buildOptions = {
     },
     outDir: path.resolve(__dirname, 'dist'),
     rollupOptions: {
-      external: ['cusdis', 'vue'],
+      external: ['vue'],
     },
   },
 }

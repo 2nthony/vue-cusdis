@@ -1,30 +1,29 @@
-import { h, ref, onMounted } from 'vue'
-import cusdis from 'cusdis'
-import attrs from './attrs'
+import { h, ref } from 'vue'
+import { props, resolveProps, injectScripts } from './utils'
 
 export default {
-  props: {
-    attrs,
-  },
+  props,
 
-  setup(props) {
+  setup(origProps) {
     const cusdisRef = ref()
+    const props = resolveProps(origProps)
 
-    onMounted(() => {
-      const el = cusdisRef.value
-      if (el) {
-        new cusdis({
-          target: el,
-          props: {
-            attrs: props.attrs,
-          },
-        })
-      }
+    injectScripts(props).then(() => {
+      const render = window.renderCusdis
+      const target = cusdisRef.value
+
+      if (render && target) render(target)
     })
 
     return () =>
       h('div', {
+        id: 'cusdis_thread',
         ref: cusdisRef,
+        'data-host': props.attrs.host,
+        'data-page-id': props.attrs.pageId,
+        'data-app-id': props.attrs.appId,
+        'data-page-title': props.attrs.pageTitle,
+        'data-page-url': props.attrs.pageUrl,
       })
   },
 }

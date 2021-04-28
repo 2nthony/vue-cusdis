@@ -23,7 +23,7 @@ npm i @evillt/vue-cusdis
   // For Vue 3
   import VueCusdis from '@evillt/vue-cusdis'
   // For Vue 2
-  import VueCusdis from '@evillt/vue-cusdis/dist/V2.es'
+  import VueCusdis from '@evillt/vue-cusdis/dist/vue2.es'
 
   export default {
     components: { VueCusdis },
@@ -38,6 +38,12 @@ npm i @evillt/vue-cusdis
 - Type: `Object`
 
 https://cusdis.com/doc#/advanced/sdk
+
+### lang
+
+- Type: `String`
+
+https://cusdis.com/doc#/advanced/i18n
 
 ## License
 

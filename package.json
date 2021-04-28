@@ -7,7 +7,8 @@
   "files": [
     "dist/*.js"
   ],
-  "main": "dist/VueCusdis.es.js",
+  "main": "dist/VueCusdis.umd.js",
+  "module": "dist/VueCusdis.es.js",
   "scripts": {
     "dev": "vite",
     "build": "rm -rf dist && npm run build:3 && npm run build:2",
@@ -16,14 +17,12 @@
     "build:2": "vite build --config vite.library.v2.config.js --emptyOutDir false",
     "prepublishOnly": "npm run build"
   },
-  "dependencies": {
-    "cusdis": "^1.1.0",
-    "vue": "^3.0.5"
-  },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
-    "vite": "^2.2.3"
+    "vite": "^2.2.3",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.6"
   },
   "release": {
     "branches": [
