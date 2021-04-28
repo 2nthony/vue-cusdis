@@ -45,6 +45,17 @@ https://cusdis.com/doc#/advanced/sdk
 
 https://cusdis.com/doc#/advanced/i18n
 
+## BREAKING CHANGES
+
+In `v2.0.0`, we rename the filename for vue2 version. Just make this change:
+
+```diff
+- import VueCusdis from '@evillt/vue-cusdis/dist/V2.es'
++ import VueCusdis from '@evillt/vue-cusdis/dist/vue2.es'
+```
+
+We thought `V2.es` was misleading.
+
 ## License
 
 MIT
