@@ -39,6 +39,12 @@ npm i @evillt/vue-cusdis
 
 https://cusdis.com/doc#/advanced/sdk
 
+### lang
+
+- Type: `String`
+
+https://cusdis.com/doc#/advanced/i18n
+
 ## License
 
 MIT
