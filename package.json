@@ -14,7 +14,7 @@
     "build": "rm -rf dist && npm run build:3 && npm run build:2",
     "serve": "vite preview",
     "build:3": "vite build --config vite.library.config.js --emptyOutDir false",
-    "build:2": "vite build --config vite.library.v2.config.js --emptyOutDir false",
+    "build:2": "vite build --config vite.library.vue2.config.js --emptyOutDir false",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
