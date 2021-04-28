@@ -1,3 +1,5 @@
+React Cusdis: https://github.com/Cusdis/sdk/tree/master/packages/react-cusdis
+
 # vue-cusdis
 
 ```console
@@ -37,13 +39,13 @@ npm i @evillt/vue-cusdis
 
 - Type: `Object`
 
-https://cusdis.com/doc#/advanced/sdk
+Cusdis SDK attributes: https://cusdis.com/doc#/advanced/sdk
 
 ### lang
 
 - Type: `String`
 
-https://cusdis.com/doc#/advanced/i18n
+For i18n, Available languages: https://cusdis.com/doc#/advanced/i18n
 
 ## BREAKING CHANGES
 
