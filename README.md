@@ -3,7 +3,7 @@ React Cusdis: https://github.com/Cusdis/sdk/tree/master/packages/react-cusdis
 # vue-cusdis
 
 ```console
-npm i @evillt/vue-cusdis
+npm i vue-cusdis
 ```
 
 ## Usage
@@ -23,9 +23,9 @@ npm i @evillt/vue-cusdis
 
 <script>
   // For Vue 3
-  import VueCusdis from '@evillt/vue-cusdis'
+  import VueCusdis from 'vue-cusdis'
   // For Vue 2
-  import VueCusdis from '@evillt/vue-cusdis/dist/vue2.es'
+  import VueCusdis from 'vue-cusdis/dist/vue2.es'
 
   export default {
     components: { VueCusdis },
@@ -49,6 +49,8 @@ For i18n, Available languages: https://cusdis.com/doc#/advanced/i18n
 
 ## BREAKING CHANGES
 
+Please migrate `@evillt/vue-cusdis` to `vue-cusdis`.
+
 In `v2.0.0`, we rename the filename for vue2 version. Just make this change:
 
 ```diff
@@ -57,6 +59,10 @@ In `v2.0.0`, we rename the filename for vue2 version. Just make this change:
 ```
 
 We thought `V2.es` was misleading.
+
+## Thanks
+
+- [Frost Ming](https://github.com/frostming)
 
 ## License
 
