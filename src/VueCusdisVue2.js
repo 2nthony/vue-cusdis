@@ -26,6 +26,7 @@ export default {
         'data-app-id': this.props.attrs.appId,
         'data-page-title': this.props.attrs.pageTitle,
         'data-page-url': this.props.attrs.pageUrl,
+        'data-theme': props.attrs.theme,
       },
     })
   },
